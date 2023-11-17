@@ -72,7 +72,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/word-count/cmd"
 	"net/http"
-	// "strconv"
+	
 )
 
 type Message struct {
@@ -80,9 +80,7 @@ type Message struct {
 	Routines int    `json:"routines"`
 }
 
-// var data = []Message{
-// 	{FilePath: "aslam", Routines: 1},
-// }
+
 
 
 func main() {
@@ -103,18 +101,12 @@ func postData(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid request payload"})
 	}
     
-	// return c.JSON(http.StatusOK, map[string]string{"file": message.FilePath, "routines": strconv.Itoa(message.Routines)})
-// 	totalCounts:=cmd.ProcessFile(message.FilePath, message.Routines)
-// 	return c.JSON(http.StatusOK, totalCounts)
-// }
+
     totalCounts,routines,timetaken:=cmd.ProcessFile(message.FilePath, message.Routines)
     timeTakenString := timetaken.String()
     return c.JSON(http.StatusOK, map[string]interface{}{"counts": totalCounts, "routines": routines, "timetaken": timeTakenString})
 
-	// return c.JSON(http.StatusOK, {"counts":totalCounts, "routines":routroutines, "timetaken":timetimetaken})
+	
 }
 
 
-// func getData(c echo.Context) error {
-// 	return c.JSON(http.StatusOK, data)
-// }
