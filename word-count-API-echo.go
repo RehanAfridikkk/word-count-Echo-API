@@ -3,7 +3,7 @@ package main
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/RehanAfridikkk/word-count/cmd"
+	"github.com/RehanAfridikkk/word-count-Echo-API/cmd"
 	"net/http"
 	
 )

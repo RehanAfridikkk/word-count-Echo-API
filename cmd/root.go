@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/RehanAfridikkk/word-count/pkg"
+	"github.com/RehanAfridikkk/word-count-Echo-API/pkg"
 )
 
 func ProcessFile(filePath string, routines int) (pkg.CountsResult,int,time.Duration) {

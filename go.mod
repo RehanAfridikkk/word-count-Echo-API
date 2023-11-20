@@ -1,4 +1,4 @@
-module github.com/RehanAfridikkk/word-count
+module github.com/RehanAfridikkk/word-count-Echo-API
 
 go 1.18
 
