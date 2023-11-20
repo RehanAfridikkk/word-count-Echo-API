@@ -3,7 +3,7 @@ package main
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/spf13/word-count/cmd"
+	"github.com/RehanAfridikkk/word-count/cmd"
 	"net/http"
 	
 )

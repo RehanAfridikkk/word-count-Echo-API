@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/spf13/word-count/pkg"
+	"github.com/RehanAfridikkk/word-count/pkg"
 )
 
 func ProcessFile(filePath string, routines int) (pkg.CountsResult,int,time.Duration) {
