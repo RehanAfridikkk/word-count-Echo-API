@@ -1,4 +1,4 @@
-module github.com/spf13/word-count
+module github.com/RehanAfridikkk/word-count
 
 go 1.18
 
