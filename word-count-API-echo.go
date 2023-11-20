@@ -1,5 +1,5 @@
 
-package main
+package word
 
 import (
 	"github.com/labstack/echo/v4"
@@ -15,7 +15,7 @@ type Message struct {
 
 
 
-func main() {
+func word () {
 	e := echo.New()
 
 	
